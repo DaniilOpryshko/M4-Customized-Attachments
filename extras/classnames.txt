@@ -1,0 +1,5 @@
+OS_A_EXPS3 - EXPS-3 SCOPE
+OS_A_Grip_SHIFT - Shift Grip
+OS_W_M4_Custom - M4
+OS_Mag_Stanag_60Rnd_Round - round mad for M4 60 rounds (compatible with vanila M4, AUG and M16A4)
+OS_WP_Suppressor_Thor - Suppressor Thor (currently not compatible with vanilla 5.56 guns)

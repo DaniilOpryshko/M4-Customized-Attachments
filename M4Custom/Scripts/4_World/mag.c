@@ -1,0 +1,1 @@
+class OS_Mag_Stanag_60Rnd_Round_Base: MagazineStorage {};
