@@ -19,7 +19,10 @@ class CfgPatches
 			"DZ_Gear_Containers",
 			"DZ_Weapons_Melee",
 			"DZ_Weapons_Magazines",
-			"DZ_Weapons_Supports"
+			"DZ_Weapons_Supports",
+			"DZ_Weapons_Firearms_M4",
+			"DZ_Weapons_Firearms_aug",
+			"DZ_Weapons_Firearms_M16A2"
 		};
 	};
 };
@@ -44,7 +47,7 @@ class CfgMods
 			class worldScriptModule
 			{
 				value = "";
-				files[] = {"M4Custom\Scripts\4_World"};
+				files[] = {"M4Custom/Scripts/4_World"};
 			};
 		};
 	};

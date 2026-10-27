@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"OS_W_M4_Custom"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms"};
+		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","DZ_Sounds_Weapons"};
 	};
 };
 class Mode_Safe;
@@ -50,8 +50,8 @@ class cfgWeapons
 		modes[] = {"SemiAuto","FullAuto"};
 		class SemiAuto: Mode_SemiAuto
 		{
-			soundSetShot[] = {"M4_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"M4_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot[] = {"M4A1_Shot_1st_SoundSet","M4A1_Shot_1st_iterior_SoundSet","M4A1_Tail_SoundSet","M4A1_InteriorTail_SoundSet","M4A1_Slapback_SoundSet","M4A1_Tail_2D_SoundSet"};
+			soundSetShotExt[] = {{"M4A1_1st_silencer_SoundSet","M4A1_silencerTail_SoundSet","M4A1_silencerInteriorTail_SoundSet"},{"M4A1_1st_silencerHomeMade_SoundSet","M4A1_silencerHomeMadeTail_SoundSet","M4A1_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.12;
 			recoil = "recoil_m4";
 			recoilProne = "recoil_m4_prone";
@@ -60,8 +60,10 @@ class cfgWeapons
 		};
 		class FullAuto: Mode_FullAuto
 		{
-			soundSetShot[] = {"M4_Shot_SoundSet","M4_Tail_SoundSet","M4_InteriorTail_SoundSet"};
-			soundSetShotExt[] = {{"M4_silencer_SoundSet","M4_silencerTail_SoundSet","M4_silencerInteriorTail_SoundSet"},{"M4_silencerHomeMade_SoundSet","M4_silencerHomeMadeTail_SoundSet","M4_silencerInteriorHomeMadeTail_SoundSet"}};
+			soundSetShot1st[] = {"M4A1_Shot_1st_SoundSet","M4A1_Shot_1st_iterior_SoundSet"};
+			soundSetShot[] = {"M4A1_Shot_SoundSet","M4A1_Shot_iterior_SoundSet","M4A1_Tail_SoundSet","M4A1_InteriorTail_SoundSet","M4A1_Slapback_SoundSet","M4A1_Tail_2D_SoundSet"};
+			soundSetShotExt1st[] = {{"M4A1_1st_silencer_SoundSet"},{"M4A1_1st_silencerHomeMade_SoundSet"}};
+			soundSetShotExt[] = {{"M4A1_silencer_SoundSet","M4A1_silencerTail_SoundSet","M4A1_silencerInteriorTail_SoundSet"},{"M4A1_silencerHomeMade_SoundSet","M4A1_silencerHomeMadeTail_SoundSet","M4A1_silencerInteriorHomeMadeTail_SoundSet"}};
 			reloadTime = 0.058;
 			recoil = "recoil_m4";
 			recoilProne = "recoil_m4_prone";
@@ -76,6 +78,7 @@ class cfgWeapons
 			distanceZoomMin = 100;
 			distanceZoomMax = 500;
 		};
+		weaponStateAnim = "dz\anims\anm\player\reloads\M4A1\w_M4A1_states.anm";
 		class InventorySlotsOffsets
 		{
 			class Shoulder
